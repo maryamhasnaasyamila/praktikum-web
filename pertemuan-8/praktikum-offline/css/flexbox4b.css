@@ -1,0 +1,54 @@
+*{
+    background: rgb(255, 171, 185);
+    margin: 35 35 35 35;
+}
+
+body{
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, article, aside, footer{
+    padding: 0.5rem;
+}
+
+header, footer{
+    background-color: lightblue;
+    margin: 5px;
+    height: 10vh;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+
+article{
+    background-color:rgb(243, 77, 105);
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+aside{
+    background-color: darkcyan;
+    margin: 5px;
+    flex: 0 0 20vw;
+    text-align: center;
+}
+
+.gambar{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(243, 77, 105);
+}
+
+img{
+    width: 30%;
+    margin: 5px;
+    align-items: flex-end;
+}
