@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Luas dan Keliling Lingkaran</title>
+</head>
+
+<body>
+    <br>
+    <h2><u>Menghitung Luas dan Keliling Lingkaran</u></h2>
+    <h3>(π = 3.14)</h3>
+    <table>
+        <tr>
+            <td>
+                <label for="jari">Masukan nilai jari-jari (cm)</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="number" id="jari" value=""/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <b>L = πr² || K = 2πr</b>
+                &nbsp;<button onclick="hitungLingkaran()">Hitung</button>
+            </td>
+        </tr>
+
+        <!-- Hasil Perhitungan Luas-->
+        <tr>
+            <td>
+                <p>Luas lingkaran</p>
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <span id="luas">0</span>
+            </td>
+        </tr>
+
+        <!-- Hasil Perhitungan Keliling-->
+        <tr>
+            <td>
+                Keliling lingkaran
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <span id="keliling">0</span>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    <hr>
+    <br>
+
+    <h2><u>Menghitung Luas dan Keliling Lingkaran</u></h2>
+    <h3>(π = 22/7)</h3>
+    <table>
+        <tr>
+            <td>
+                <label for="jari2">Masukan nilai jari-jari (cm)</label>
+            </td>
+            <td>:</td>
+            <td>
+                <input type="number" id="jari2" value=""/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td></td>
+            <td>
+                <b>L = πr² || K = 2πr</b>
+                &nbsp;<button onclick="hitungLingkaran2()">Hitung</button>
+            </td>
+        </tr>
+
+        <!-- Hasil Perhitungan Luas-->
+        <tr>
+            <td>
+                <p>Luas lingkaran</p>
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <span id="luas2">0</span>
+            </td>
+        </tr>
+
+        <!-- Hasil Perhitungan Keliling-->
+        <tr>
+            <td>
+                Keliling lingkaran
+            </td>
+            <td>
+                :
+            </td>
+            <td>
+                <span id="keliling2">0</span>
+            </td>
+        </tr>
+    </table>
+    
+    <script>
+        window.alert("Ini adalah Program Menghitung Keliling & Luas Lingkaran dengan menggunakan JavaScript")
+        function hitungLingkaran(){
+            let jari = document.getElementById('jari').value;
+
+            const phi = 3.14; // konstanta 1
+
+            // menghitung luas 
+            let luas = phi * (jari**2);
+
+            //menghitung keliling
+            let keliling = 2 * phi * jari;
+
+            document.getElementById('luas').innerHTML = luas.toFixed(2);
+            document.getElementById('keliling').innerHTML = keliling.toFixed(2);
+        }
+
+        function hitungLingkaran2(){
+            let jari2 = document.getElementById('jari2').value;
+
+            const phi2 = 22/7; // konstanta 2
+
+            // menghitung luas 
+            let luas2 = phi2 * (jari2**2);
+
+            //menghitung keliling
+            let keliling2 = 2 * phi2 * jari2;
+
+            document.getElementById('luas2').innerHTML = luas2.toFixed(2);
+            document.getElementById('keliling2').innerHTML = keliling2.toFixed(2);
+        }
+    </script>
+</body>
+
+</html>
