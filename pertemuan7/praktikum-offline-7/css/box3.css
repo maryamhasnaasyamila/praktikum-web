@@ -1,0 +1,53 @@
+.topbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+}
+
+.topbox .box1{
+    background-color: yellow;
+    width: 20%;
+    height: 72px;
+    border: 1px solid black;
+}
+
+.topbox .box2{
+    background-color: coral;
+    width: 78%;
+    height: 72px;
+    border: 1px solid black;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 20px 20px 20px;
+}
+
+.container .box1{
+    background-color: #aedd94;
+    width: 20%;
+    height: 465px;
+    border: 1px solid black;
+}
+
+.container .box2{
+    background-color: lightgray;
+    width: 56%;
+    height: 465px;
+    border: 1px solid black;
+}
+
+.container .box3{
+    background-color: rgb(29, 226, 226);
+    width: 20%;
+    height: 465px;
+    border: 1px solid black;
+}
+
+.footbox{
+    height: 70px;
+    background-color: rgb(37, 37, 250);
+    border: 1px solid black;
+    margin: 20px 20px 20px 20px;
+}
