@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menghitung Kurs Rupiah</title>
+</head>
+<body>
+    <!-- 
+        Algoritma/Alur Program:
+        1. Membuat input untuk Rupiah
+        2. Membuat tag <p> untuk menampung hasil
+        3. Mendeklarasikan variabel 'rupiah'
+        4. Hitung pembagian, variabel 'rupiah' dibagi 14.650
+        5. Append hasil pembagian ke id "hasil"
+    -->
+
+    <!-- Tampilan 1 -->
+    <br>
+    <h1>Konversi Rupiah ke Dollar</h1>
+    <br>
+    <label for="rupiah">Masukan nilai Rupiah: </label>
+    <input type="number" id="rupiah" value="" onkeyup="kursRupiah()"/>
+    
+    <p>Hasil konversi ke Dollar: <span id="hasil"></span></p>
+    <br>
+    
+    <hr>
+
+    <!-- Tampilan 2 -->
+    <br>
+    <h1>Konversi Rupiah ke Dollar</h1>
+    <br>
+    <label for="rupiah">Masukan nilai Dollar: </label>
+    <input type="number" id="dollar" value="" onkeyup="kursDollar()"/>
+
+    <p>Hasil konversi ke Rupiah: <span id="hasil2"></span></p>
+    
+
+    <script>
+        window.alert("Ini adalah Program Menghitung Kurs Rupiah dengan menggunakan JavaScript")
+        function kursRupiah(){
+            let rupiah = document.getElementById('rupiah').value;
+            
+            // konversi rupiah ke dollar
+            let hasil = rupiah / 14650;
+
+            // hasil kurs
+            document.getElementById('hasil').innerHTML = hasil.toFixed(2);
+        }
+
+        function kursDollar(){
+            let dollar = document.getElementById('dollar').value;
+            
+            // konversi dollar ke rupiah
+            let hasil2 = dollar * 14650;
+
+            // hasil kurs
+            document.getElementById('hasil2').innerHTML = hasil2;
+        }
+    </script>
+</body>
+</html>
